@@ -26,3 +26,8 @@ apt install -y zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 chsh -s /usr/bin/zsh
 ```
+#### bbr一键地址
+```
+wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f v4.11.9                #注意:执行此命令会自动重启.
+wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh -f v4.11.9   #BBR powered by Vicer
+```
