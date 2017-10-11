@@ -1,7 +1,7 @@
 # MyShells
 I is a repo of some useful shells to back up into github
 
-#### [首先应该修改软件源](https://github.com/htopevo/MyShells/blob/master/README.md)  
+#### [首先应该修改软件源](https://github.com/htopevo/MyShells/blob/master/change_mirror.md)  
 
 
 #### 安装必要的软件包
