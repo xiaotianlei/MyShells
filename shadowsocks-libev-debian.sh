@@ -13,10 +13,10 @@ export PATH
 cur_dir=`pwd`
 
 libsodium_file="libsodium-1.0.13"
-libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.13/libsodium-1.0.13.tar.gz"
+libsodium_url="https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/libsodium-1.0.13.tar.gz"
 
 mbedtls_file="mbedtls-2.6.0"
-mbedtls_url="http://dl.teddysun.com/files/mbedtls-2.6.0-gpl.tgz"
+mbedtls_url="https://github.com/htopevo/MyShells/raw/master/packages/ss-libev/mbedtls-2.6.0-gpl.tgz"
 
 # Stream Ciphers
 ciphers=(
@@ -87,7 +87,7 @@ get_latest_version(){
     [ -z ${ver} ] && echo "Error: Get shadowsocks-libev latest version failed" && exit 1
     shadowsocks_libev_ver="shadowsocks-libev-$(echo ${ver} | sed -e 's/^[a-zA-Z]//g')"
     download_link="https://github.com/shadowsocks/shadowsocks-libev/releases/download/${ver}/${shadowsocks_libev_ver}.tar.gz"
-    init_script_link="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev-debian"
+    init_script_link="https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/shadowsocks-libev-debian"
 }
 
 get_opsy(){
