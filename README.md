@@ -14,7 +14,7 @@ apt update && apt install -y vim htop curl git
 ```
 #### 一个默认参数的ss-libev服务端
 ```
-wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubusercontent.com/htopevo/MyShells/master/shadowsocks-libev-debian.sh
+wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/shadowsocks-libev-debian.sh
 chmod +x shadowsocks-libev-debian.sh
 ./shadowsocks-libev-debian.sh
 ```
@@ -26,7 +26,7 @@ chmod +x shadowsocks-go.sh
 ```
 #### Debian7/8用二进制包安装最新的nginx稳定版本
 ```
-wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/htopevo/MyShells/master/package_install_nginx.sh
+wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/htopevo/MyShells/master/packages/nginx/package_install_nginx.sh
 chmod +x package_install_nginx.sh
 ./package_install_nginx.sh
 ```
