@@ -47,5 +47,9 @@ wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com
 ```
 #### 安装Aria2 128线程(仅Debian8+x64)
 ```
-wget --no-check-certificate -qO 'Aria2.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/aria2/Aria2.sh' && chmod a+x Aria2.sh && bash Aria2.sh 128
+wget --no-check-certificate -qO 'Aria2.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/aria2/Aria2.sh'
+chmod a+x Aria2.sh
+bash Aria2.sh 128
+
+Usage: /etc/aria2/aria2 {start|stop|restart}
 ```
