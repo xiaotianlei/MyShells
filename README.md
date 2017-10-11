@@ -1,7 +1,12 @@
 # MyShells
 This is a number of frequently used convenience scripts, mainly used to maintain the linux host, continuous updates, some of my original file does not take the initiative to indicate the source, but retain the original author of the information.
 
-#### [首先应该修改软件源](https://github.com/htopevo/MyShells/blob/master/change_mirror.md)  
+#### 一键重装纯净Debian/ubuntu
+```
+wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/reloadsystem/DebianNET.sh' && chmod -x DebianNET.sh
+bash DebianNET.sh -d 8 -v 64 --mirror 'http://ftp.nl.debian.org/debian/'       # nl节点安装debian8x64
+```
+#### [可能需要修改软件源（如果使用shells指定源并重装的则不需要）](https://github.com/htopevo/MyShells/blob/master/change_mirror.md)  
 
 #### 安装必要的软件包
 ```
@@ -39,9 +44,4 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 #### 一键锐速 
 ```
 wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/appex.sh" && bash /tmp/appex.sh 'install'
-```
-#### 一键重装纯净，最好在vnc下用
-```
-wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/reloadsystem/DebianNET.sh' && chmod -x DebianNET.sh
-bash DebianNET.sh -d 8 -v 64       #安装debian8x64
 ```
