@@ -45,3 +45,7 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 ```
 wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/appex.sh" && bash /tmp/appex.sh 'install'
 ```
+#### 安装Aria2 128线程(仅Debian8+x64)
+```
+wget --no-check-certificate -qO 'Aria2.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/aria2/Aria2.sh' && chmod a+x Aria2.sh && bash Aria2.sh 128
+```
