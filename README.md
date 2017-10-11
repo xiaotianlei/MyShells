@@ -18,7 +18,7 @@ wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubuse
 chmod +x shadowsocks-libev-debian.sh
 ./shadowsocks-libev-debian.sh
 ```
-#### ss-go 
+#### ss-go  #Go版暂不支持UDP转发
 ```
 wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-go/shadowsocks-go.sh
 chmod +x shadowsocks-go.sh
