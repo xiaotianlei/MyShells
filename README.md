@@ -10,7 +10,7 @@ bash DebianNET.sh -d 8 -v 64 --mirror 'http://ftp.nl.debian.org/debian/'       #
 
 #### 安装必要的软件包
 ```
-apt update && apt install -y vim htop curl git 
+apt update && apt install -y vim htop curl git zsh
 ```
 #### 一个默认参数的ss-libev服务端
 ```
@@ -32,7 +32,6 @@ chmod +x package_install_nginx.sh
 ```
 #### Oh-my-zsh
 ```
-apt install -y zsh 
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 chsh -s /usr/bin/zsh
 ```
