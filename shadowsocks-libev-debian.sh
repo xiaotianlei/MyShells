@@ -258,23 +258,23 @@ pre_install(){
     # Set shadowsocks config stream ciphers
     while true
     do
-    echo -e "Please select stream cipher for shadowsocks-libev:"
-    for ((i=1;i<=${#ciphers[@]};i++ )); do
-        hint="${ciphers[$i-1]}"
-        echo -e "${green}${i}${plain}) ${hint}"
-    done
+    #echo -e "Please select stream cipher for shadowsocks-libev:"
+    #for ((i=1;i<=${#ciphers[@]};i++ )); do
+    #    hint="${ciphers[$i-1]}"
+    #    echo -e "${green}${i}${plain}) ${hint}"
+    #done
     #read -p "Which cipher you'd select(Default: ${ciphers[0]}):" pick
-    [ -z "$pick" ] && pick=7
-    expr ${pick} + 1 &>/dev/null
-    if [ $? -ne 0 ]; then
-        echo -e "[${red}Error${plain}] Input error, please input a number"
-        continue
-    fi
-    if [[ "$pick" -lt 1 || "$pick" -gt ${#ciphers[@]} ]]; then
-        echo -e "[${red}Error${plain}] Input error, please input a number between 1 and ${#ciphers[@]}"
-        continue
-    fi
-    shadowsockscipher=${ciphers[$pick-1]}
+    #[ -z "$pick" ] && pick=7
+    #expr ${pick} + 1 &>/dev/null
+    #if [ $? -ne 0 ]; then
+    #    echo -e "[${red}Error${plain}] Input error, please input a number"
+    #    continue
+    #fi
+    #if [[ "$pick" -lt 1 || "$pick" -gt ${#ciphers[@]} ]]; then
+    #    echo -e "[${red}Error${plain}] Input error, please input a number between 1 and ${#ciphers[@]}"
+    #    continue
+    #fi
+    shadowsockscipher=${ciphers[6]}
     echo
     echo "---------------------------"
     echo "cipher = ${shadowsockscipher}"
