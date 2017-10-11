@@ -1,5 +1,5 @@
 # MyShells
-This is a number of frequently used convenience scripts, mainly used to maintain the linux host, continuous updates, some of my original file does not take the initiative to indicate the source, but retain the original author of the information.
+This is a number of frequently used convenience scripts, mainly used to maintain the linux Debian, continuous updates, some of my original file does not take the initiative to indicate the source, but retain the original author of the information.
 
 #### 一键重装纯净Debian/ubuntu
 ```
