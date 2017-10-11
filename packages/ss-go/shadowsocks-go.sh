@@ -216,7 +216,7 @@ pre_install(){
 
     echo
     echo "Press any key to start...or Press Ctrl+C to cancel"
-    char=`get_char`
+    #char=`get_char`
     #Install necessary dependencies
     if check_sys packageManager yum; then
         yum install -y wget unzip gzip curl
