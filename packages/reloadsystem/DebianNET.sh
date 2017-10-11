@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "The default password is htopevo"
 while [[ $# -ge 1 ]]; do
   case $1 in
     -v|--ver)
