@@ -421,8 +421,12 @@ install_shadowsocks(){
     echo -e "Your Password         : \033[41;37m ${shadowsockspwd} \033[0m"
     echo -e "Your Encryption Method: \033[41;37m ${shadowsockscipher} \033[0m"
     echo
-    echo "Welcome to visit:https://teddysun.com/358.html"
     echo "Enjoy it!"
+    echo "Usage："
+    echo "start：  /etc/init.d/shadowsocks start"
+    echo "stop：   /etc/init.d/shadowsocks stop"
+    echo "restart：/etc/init.d/shadowsocks restart"
+    echo "status： /etc/init.d/shadowsocks status"
     echo
 }
 

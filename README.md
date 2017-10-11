@@ -14,3 +14,9 @@ wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubuse
 chmod +x shadowsocks-libev-debian.sh
 ./shadowsocks-libev-debian.sh
 ```
+#### Debian7/8用二进制包安装最新的nginx稳定版本
+```
+wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/htopevo/MyShells/master/package_install_nginx.sh
+chmod +x package_install_nginx.sh
+./package_install_nginx.sh
+```
