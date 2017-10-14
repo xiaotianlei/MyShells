@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "The default password is htopevo"
+echo "The default password is minexavier"
 while [[ $# -ge 1 ]]; do
   case $1 in
     -v|--ver)
@@ -93,7 +93,7 @@ DebianMirrorDirectory="$(echo -n "$tmpMirror" |awk -F''${DebianMirror}'' '{print
 
 [ -z $vDEB ] && vDEB='wheezy';
 [ -z $VER ] && VER='i386';
-[ -z $myPASSWORD ] && myPASSWORD='htopevo'
+[ -z $myPASSWORD ] && myPASSWORD='minexavier'
 
 clear && echo -e "\n\033[36m# Install\033[0m\n"
 

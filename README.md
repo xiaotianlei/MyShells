@@ -3,10 +3,10 @@ This is a number of frequently used convenience scripts, mainly used to maintain
 
 #### 一键重装纯净Debian/ubuntu
 ```
-wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/reloadsystem/DebianNET.sh' && chmod -x DebianNET.sh
+wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/reloadsystem/DebianNET.sh' && chmod -x DebianNET.sh
 bash DebianNET.sh -d 8 -v 64 --mirror 'http://ftp.nl.debian.org/debian/'       # nl节点安装debian8x64
 ```
-#### [可能需要修改软件源（如果使用shells指定源并重装的则不需要）](https://github.com/htopevo/MyShells/blob/master/change_mirror.md)  
+#### [可能需要修改软件源（如果使用shells指定源并重装的则不需要）](https://github.com/minexavier/MyShells/blob/master/change_mirror.md)  
 
 #### 安装必要的软件包
 ```
@@ -14,19 +14,19 @@ apt update && apt install -y vim htop curl git zsh
 ```
 #### 一个默认参数的ss-libev服务端
 ```
-wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/shadowsocks-libev-debian.sh
+wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubusercontent.com/minexavier/MyShells/master/packages/ss-libev/shadowsocks-libev-debian.sh
 chmod +x shadowsocks-libev-debian.sh
 ./shadowsocks-libev-debian.sh
 ```
 #### ss-go  #Go版暂不支持UDP转发
 ```
-wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-go/shadowsocks-go.sh
+wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/minexavier/MyShells/master/packages/ss-go/shadowsocks-go.sh
 chmod +x shadowsocks-go.sh
 ./shadowsocks-go.sh
 ```
-#### Debian7/8用二进制包安装最新的nginx稳定版本
+#### _Debian7/8用二进制包安装最新的nginx稳定版本_ 建议使用oneinstack
 ```
-wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/htopevo/MyShells/master/packages/nginx/package_install_nginx.sh
+wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/minexavier/MyShells/master/packages/nginx/package_install_nginx.sh
 chmod +x package_install_nginx.sh
 ./package_install_nginx.sh
 ```
@@ -37,16 +37,16 @@ chsh -s /usr/bin/zsh
 ```
 #### 一键bbr
 ```
-wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f v4.11.9                #注意:执行此命令会自动重启.
-wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh -f v4.11.9   #BBR powered by Vicer
+wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f v4.11.9                #注意:执行此命令会自动重启.
+wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh -f v4.11.9   #BBR powered by Vicer
 ```
 #### 一键锐速 
 ```
-wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/htopevo/MyShells/master/packages/kernels/appex.sh" && bash /tmp/appex.sh 'install'
+wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/appex.sh" && bash /tmp/appex.sh 'install'
 ```
 #### 安装Aria2 128线程(仅Debian8+x64)
 ```
-wget --no-check-certificate -qO 'Aria2.sh' 'https://raw.githubusercontent.com/htopevo/MyShells/master/packages/aria2/Aria2.sh'
+wget --no-check-certificate -qO 'Aria2.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/aria2/Aria2.sh'
 chmod a+x Aria2.sh
 bash Aria2.sh 128
 

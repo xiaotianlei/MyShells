@@ -12,10 +12,10 @@ export PATH
 cur_dir=`pwd`
 
 libsodium_file="libsodium-1.0.13"
-libsodium_url="https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/libsodium-1.0.13.tar.gz"
+libsodium_url="https://raw.githubusercontent.com/minexavier/MyShells/master/packages/ss-libev/libsodium-1.0.13.tar.gz"
 
 mbedtls_file="mbedtls-2.6.0"
-mbedtls_url="https://github.com/htopevo/MyShells/raw/master/packages/ss-libev/mbedtls-2.6.0-gpl.tgz"
+mbedtls_url="https://github.com/minexavier/MyShells/raw/master/packages/ss-libev/mbedtls-2.6.0-gpl.tgz"
 
 # Stream Ciphers
 ciphers=(
@@ -85,8 +85,8 @@ get_latest_version(){
     ver=$(wget --no-check-certificate -qO- https://api.github.com/repos/shadowsocks/shadowsocks-libev/releases/latest | grep 'tag_name' | cut -d\" -f4)
     [ -z ${ver} ] && echo "Error: Get shadowsocks-libev latest version failed" && exit 1
     shadowsocks_libev_ver="shadowsocks-libev-$(echo ${ver} | sed -e 's/^[a-zA-Z]//g')"
-    download_link="https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/shadowsocks-libev-3.1.0.tar.gz"
-    init_script_link="https://raw.githubusercontent.com/htopevo/MyShells/master/packages/ss-libev/shadowsocks-libev-debian"
+    download_link="https://raw.githubusercontent.com/minexavier/MyShells/master/packages/ss-libev/shadowsocks-libev-3.1.0.tar.gz"
+    init_script_link="https://raw.githubusercontent.com/minexavier/MyShells/master/packages/ss-libev/shadowsocks-libev-debian"
 }
 
 get_opsy(){
@@ -122,7 +122,7 @@ check_version(){
 print_info(){
     clear
     echo "#############################################################"
-    echo "# It has been MODIFY by htopevo!!!!  please note that!!!    #"
+    echo "# It has been MODIFY by minexavier!!!!  please note that!!!    #"
     echo "#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ #"
     echo "# Install Shadowsocks-libev server for Debian or Ubuntu     #"
     echo "# Author: Teddysun <i@teddysun.com>                         #"
