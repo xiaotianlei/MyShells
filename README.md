@@ -18,13 +18,11 @@ wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubuse
 chmod +x shadowsocks-libev-debian.sh
 ./shadowsocks-libev-debian.sh
 ```
-#### ss-go  #Go版暂不支持UDP转发
+#### 顺便装一下探针吧！
 ```
-wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/minexavier/MyShells/master/packages/ss-go/shadowsocks-go.sh
-chmod +x shadowsocks-go.sh
-./shadowsocks-go.sh
+git clone https://github.com/tenyue/ServerStatus.git
 ```
-#### _Debian7/8用二进制包安装最新的nginx稳定版本_ 建议使用oneinstack
+#### ~~Debian7/8用二进制包安装最新的nginx稳定版本~~_ 建议使用oneinstack
 ```
 wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/minexavier/MyShells/master/packages/nginx/package_install_nginx.sh
 chmod +x package_install_nginx.sh
