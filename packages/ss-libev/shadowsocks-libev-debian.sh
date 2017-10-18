@@ -236,7 +236,7 @@ pre_install(){
     do
     echo -e "Please input port for shadowsocks-libev [1-65535]:"
     #read -p "(Default port: 8989):" shadowsocksport
-    [ -z "$shadowsocksport" ] && shadowsocksport="386"
+    [ -z "$shadowsocksport" ] && shadowsocksport="39331"
     expr ${shadowsocksport} + 1 &>/dev/null
     if [ $? -eq 0 ]; then
         if [ ${shadowsocksport} -ge 1 ] && [ ${shadowsocksport} -le 65535 ]; then
