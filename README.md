@@ -10,7 +10,7 @@ bash DebianNET.sh -d 8 -v 64 --mirror 'http://ftp.nl.debian.org/debian/'       #
 
 #### 安装必要的软件包
 ```
-apt update && apt install -y vim htop curl git zsh
+apt update && apt install -y vim htop curl git zsh screen openssl
 ```
 #### 一个默认参数的ss-libev服务端
 ```
