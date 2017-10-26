@@ -10,7 +10,7 @@ bash DebianNET.sh -d 8 -v 64 --mirror 'http://ftp.nl.debian.org/debian/'       #
 
 #### 安装必要的软件包
 ```
-apt update && apt install -y vim htop curl git zsh screen openssl
+apt update && apt install -y vim htop curl git zsh screen openssl python
 ```
 #### 一个默认参数的ss-libev服务端
 ```
@@ -20,13 +20,20 @@ chmod +x shadowsocks-libev-debian.sh
 ```
 #### 顺便装一下探针吧！
 ```
-git clone https://github.com/tenyue/ServerStatus.git
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/status.sh && chmod +x status.sh
+bash status.sh c # 显示客户端管理菜单
+bash status.sh s # 显示服务端管理菜单
 ```
-#### ~~Debian7/8用二进制包安装最新的nginx稳定版本~~_ 建议使用oneinstack
+#### oneinstack
 ```
-wget --no-check-certificate -O package_install_nginx.sh https://raw.githubusercontent.com/minexavier/MyShells/master/packages/nginx/package_install_nginx.sh
-chmod +x package_install_nginx.sh
-./package_install_nginx.sh
+apt-get -y install wget screen curl python #for Debian/Ubuntu
+wget http://aliyun-oss.linuxeye.com/oneinstack-full.tar.gz #阿里云经典网络下载
+wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz #包含源码，国内外均可下载
+wget http://mirrors.linuxeye.com/oneinstack.tar.gz #不包含源码，建议仅国外主机下载
+tar xzf oneinstack-full.tar.gz
+cd oneinstack
+screen -S ois
+./install.sh
 ```
 #### Oh-my-zsh
 ```
@@ -38,9 +45,14 @@ chsh -s /usr/bin/zsh
 wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f v4.11.9                #注意:执行此命令会自动重启.
 wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh -f v4.11.9   #BBR powered by Vicer
 ```
-#### 一键锐速 
+
+#### 魔改BBR
 ```
-wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/appex.sh" && bash /tmp/appex.sh 'install'
+wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install
+```
+#### V2ray
+```
+bash <(curl -L -s https://install.direct/go.sh)
 ```
 #### 安装Aria2 128线程(仅Debian8+x64)
 ```
