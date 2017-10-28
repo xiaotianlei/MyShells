@@ -42,14 +42,10 @@ chsh -s /usr/bin/zsh
 ```
 #### 一键bbr
 ```
-wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f v4.11.9                #注意:执行此命令会自动重启.
-wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh -f v4.11.9   #BBR powered by Vicer
+wget https://raw.githubusercontent.com/nanqinlang-tcp/tcp_nanqinlang/master/Debian/tcp_nanqinlang_3.0.sh &&
+bash tcp_nanqinlang_3.0.sh
 ```
 
-#### 魔改BBR
-```
-wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install
-```
 #### V2ray
 ```
 bash <(curl -L -s https://install.direct/go.sh)
