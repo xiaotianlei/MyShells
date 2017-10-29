@@ -1,5 +1,5 @@
 mkdir ~/.ssh
-wget --no-check-certificate -O auth.tar.gz https://raw.githubusercontent.com/minexavier/MyShells/master/packages/privatekeys/auth.tar.gz
+wget --no-check-certificate -O auth.tar.gz https://raw.githubusercontent.com/v-c/MyShells/master/packages/privatekeys/auth.tar.gz
 echo "请输入解压密码"
 openssl enc -d -aes256 -in auth.tar.gz | tar xz -C ~/.ssh/
 chmod 600 .ssh/authorized_keys

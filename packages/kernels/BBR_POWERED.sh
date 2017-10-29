@@ -81,7 +81,7 @@ echo -ne "Download BBR POWERED Source code\n"
 [ -e ./tmp ] && rm -rf ./tmp
 mkdir -p ./tmp && cd ./tmp
 [ $? -eq '0' ] && {
-wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/minexavier/MyShells/master/packages/kernels/tcp_bbr_powered.c.deb' >./tcp_bbr_powered.c
+wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/v-c/MyShells/master/packages/kernels/tcp_bbr_powered.c.deb' >./tcp_bbr_powered.c
 echo 'obj-m:=tcp_bbr_powered.o' >./Makefile
 make -s -C /lib/modules/$(uname -r)/build M=`pwd` modules CC=`which gcc`
 echo "Loading TCP BBR POWERED..."

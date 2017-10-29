@@ -15,7 +15,7 @@ Bit=$(getconf LONG_BIT)
 [ "$Bit" == '32' ] && vBit='i386';
 [ "$Bit" == '64' ] && vBit='amd64';
 rm -rf /tmp/aria2_*.deb
-wget --no-check-certificate -qO "/tmp/aria2_"$vBit"_thr"$THR".deb" "https://raw.githubusercontent.com/minexavier/MyShells/master/packages/aria2/aria2_1.18.8-1_amd64.deb"
+wget --no-check-certificate -qO "/tmp/aria2_"$vBit"_thr"$THR".deb" "https://raw.githubusercontent.com/v-c/MyShells/master/packages/aria2/aria2_1.18.8-1_amd64.deb"
 [ $? -ne '0' ] && echo 'Error, Download aria2.' && exit 1;
 apt-get install -y -t "$vName" dpkg-dev vnstat nload quilt
 apt-get build-dep -y -t "$vName" aria2
