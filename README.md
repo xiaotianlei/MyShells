@@ -27,7 +27,6 @@ bash status.sh s # 显示服务端管理菜单
 #### oneinstack
 ```
 apt-get -y install wget screen curl python #for Debian/Ubuntu
-wget http://aliyun-oss.linuxeye.com/oneinstack-full.tar.gz #阿里云经典网络下载
 wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz #包含源码，国内外均可下载
 wget http://mirrors.linuxeye.com/oneinstack.tar.gz #不包含源码，建议仅国外主机下载
 tar xzf oneinstack-full.tar.gz
@@ -40,11 +39,7 @@ screen -S ois
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 chsh -s /usr/bin/zsh
 ```
-#### 一键bbr
-```
-wget https://raw.githubusercontent.com/nanqinlang-tcp/tcp_nanqinlang/master/Debian/tcp_nanqinlang_3.0.sh &&
-bash tcp_nanqinlang_3.0.sh
-```
+#### [一键bbr](https://github.com/nanqinlang-tcp/tcp_nanqinlang)
 
 #### V2ray
 ```
@@ -55,6 +50,5 @@ bash <(curl -L -s https://install.direct/go.sh)
 wget --no-check-certificate -qO 'Aria2.sh' 'https://raw.githubusercontent.com/v-c/MyShells/master/packages/aria2/Aria2.sh'
 chmod a+x Aria2.sh
 bash Aria2.sh 128
-
 Usage: /etc/aria2/aria2 {start|stop|restart}
 ```
