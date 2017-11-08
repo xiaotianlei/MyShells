@@ -6,7 +6,6 @@ This is a number of frequently used convenience scripts, mainly used to maintain
 wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/v-c/MyShells/master/packages/reloadsystem/DebianNET.sh' && chmod -x DebianNET.sh
 bash DebianNET.sh -d 8 -v 64 --mirror 'http://ftp.nl.debian.org/debian/'       # nl节点安装debian8x64
 ```
-#### [可能需要修改软件源（如果使用shells指定源并重装的则不需要）](https://github.com/v-c/MyShells/blob/master/change_mirror.md)  
 
 #### 安装必要的软件包
 ```
