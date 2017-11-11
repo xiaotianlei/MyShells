@@ -17,17 +17,10 @@ wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubuse
 chmod +x shadowsocks-libev-debian.sh
 ./shadowsocks-libev-debian.sh
 ```
-#### 顺便装一下探针吧！
-```
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/status.sh && chmod +x status.sh
-bash status.sh c # 显示客户端管理菜单
-bash status.sh s # 显示服务端管理菜单
-```
 #### oneinstack
 ```
 apt-get -y install wget screen curl python #for Debian/Ubuntu
 wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz #包含源码，国内外均可下载
-wget http://mirrors.linuxeye.com/oneinstack.tar.gz #不包含源码，建议仅国外主机下载
 tar xzf oneinstack-full.tar.gz
 cd oneinstack
 screen -S ois
@@ -43,6 +36,14 @@ chsh -s /usr/bin/zsh
 #### V2ray
 ```
 bash <(curl -L -s https://install.direct/go.sh)
+```
+#### pyenv
+```
+apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+# pyenv install 
+# pyenv global
+# pyenv rehash
 ```
 #### 安装Aria2 128线程(仅Debian8+x64)
 ```
